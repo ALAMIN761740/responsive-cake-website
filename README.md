@@ -2,7 +2,7 @@
 
 
 
-![preview img](/preview.png) 
+ 
 
 ## 📌 Project Features
 - Fully responsive cake website (Mobile First Methodology).
@@ -11,7 +11,7 @@
 - Smooth scrolling between sections.
 - Scroll animations.
 - Compatible with all modern browsers and devices.
-- 
+
 
 
 
