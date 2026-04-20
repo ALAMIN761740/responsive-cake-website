@@ -35,7 +35,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*=============== HOME SWIPER ===============*/
+const swiperHome = new Swiper('.home__swiper', {
+  
+  loop: true,
 
+});
 
 /*=============== CHANGE HEADER STYLES ===============*/
 
