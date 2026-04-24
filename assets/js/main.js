@@ -36,28 +36,31 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== HOME SWIPER ===============*/
 const swiperHome = new Swiper('.home__swiper', {
-  
-    loop: true,
-    grabCursor: true,
-    speed : 800,
-    effect: 'creative',
-    creativeEffect: {
-      prev: {
-        translate:['-120%', 0, -500],
-        rotate: [0,0,-45],
-        opacity: 0,
-      },
-     next: {
-        translate:['120%', 0, -500],
-        rotate: [0,0,45],
-        opacity: 0,
-     },
-     autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        },
+  loop: true,
+  grabCursor: true,
+  speed: 800,
+  effect: 'creative',
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  creativeEffect: {
+    prev: {
+      translate: ['-120%', 0, -500],
+      rotate: [0, 0, -45],
+      opacity: 0,
     },
+    next: {
+      translate: ['120%', 0, -500],
+      rotate: [0, 0, 45],
+      opacity: 0,
+    },
+  },
 });
+
+
 
 /*=============== CHANGE HEADER STYLES ===============*/
 const scrollHeader = () =>{
@@ -66,7 +69,30 @@ const scrollHeader = () =>{
     this.scrollY >= 50 ? header.classList.add('scroll-header') : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+
+
+
+
 /*=============== PRODUCTS SWIPER ===============*/
+const swiperTabs = new Swiper('.product__tabs', {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  slideToClickedSlide: true,
+});
+
+const swiperProducts = new Swiper('.product__content', {
+  loop: false, // ❗ MUST off
+  spaceBetween: 32,
+  autoHeight: true,
+
+  thumbs: {
+    swiper: swiperTabs,
+  },
+});
+
+
 
 
 /*=============== NEW SWIPER ===============*/
