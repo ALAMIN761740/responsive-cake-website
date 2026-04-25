@@ -496,7 +496,7 @@ img {
 
 
 /*=============== PRODUCTS SECTION ===============*/
-.product__button{
+ .product__button{
   background-color: var(--white-color);
   color: var(--title-color);
   padding: .5rem .75rem;
@@ -515,8 +515,13 @@ img {
   box-shadow: 0 4px 24px hsla(350, 70%, 65%, .5);
 }
 
-
 .product__cards{
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product__card{
   position: relative;
   background-color: var(--container-color);
   padding: 14rem 1.5rem 2rem;
@@ -593,7 +598,7 @@ img {
 .product__button.active{
   background-color: var(--first-color);
   color: var(--white-color);
-}
+} 
 
 
 
