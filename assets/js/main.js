@@ -78,15 +78,13 @@ window.addEventListener('scroll', scrollHeader)
 /*=============== PRODUCTS SWIPER ===============*/
 const swiperTabs = new Swiper('.product__tabs', {
   slidesPerView: 'auto',
-  spaceBetween: 16,
-  slideToClickedSlide: true,
+  
 });
 
 const swiperProducts = new Swiper('.product__content', {
-  loop: false, // ❗ MUST off
+  loop: true, 
   spaceBetween: 32,
-  autoHeight: true,
-
+  
   thumbs: {
     swiper: swiperTabs,
   },
