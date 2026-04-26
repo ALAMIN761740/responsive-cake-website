@@ -117,10 +117,10 @@ const swiperNew = new Swiper('.new__swiper', {
     nextEl: '.new  .swiper-button-next',
     prevEl: '.new  .swiper-button-prev',
   },
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 });
 
 
