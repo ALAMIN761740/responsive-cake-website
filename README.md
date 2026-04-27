@@ -7,7 +7,7 @@ This project focuses on delivering a smooth user experience with elegant UI desi
 
 ## 🚀 Live Demo
 
-👉 [View Live Project](#) *(Add your deployed link here)*
+👉 [View Live Project](#) *(https://responsive-cake-website-alamin.netlify.app/)*
 
 ---
 
