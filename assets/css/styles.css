@@ -1419,6 +1419,15 @@ img {
     left: 10rem;
     bottom: -4rem;
   } 
+
+  .scrollup{
+    right: 3rem;
+  }
 }
 
 /* For 2K resolutions <> */
+@media (width >= 2048px){
+  body{
+    zoom: 120%;
+  }
+}
