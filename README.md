@@ -110,7 +110,7 @@ responsive-cake-website/
 
 ## 📸 Screenshots
 
-*(Add screenshots here to showcase UI)*
+![Screenshot](assets/img/preview.png)
 
 ---
 
