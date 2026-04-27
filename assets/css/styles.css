@@ -230,12 +230,22 @@ img {
 
 
 
+
+
+
 /* Change header styles */
 .scroll-header{
   box-shadow: 0 2px 16px hsla(350, 70%, 20%, .1);
 }
 
 /* Active link */
+.active-link{
+  color: var(--first-color);
+}
+
+
+
+
 
 
 /*=============== HOME SECTION ===============*/
@@ -388,6 +398,8 @@ img {
   background-color: var(--first-color-alt);
   box-shadow: 0 4px 24px hsla(350, 70%, 65%, .5);
 }
+
+
 
 
 
@@ -630,6 +642,8 @@ img {
 
 
 
+
+
 /*=============== NEW SECTION ===============*/
 .new__container{
   row-gap: 5rem;
@@ -707,6 +721,7 @@ img {
 
 
 
+
 /* Swiper class */
 
 .new__swiper{
@@ -754,6 +769,13 @@ img {
 .new .swiper-button-next{
   right: calc(50% - 3rem);
 }
+
+
+
+
+
+
+
 
 /*=============== CONTACT SECTION ===============*/
 .contact{
@@ -840,6 +862,11 @@ img {
 
 
 
+
+
+
+
+
 /*=============== FOOTER ===============*/
 .footer{
   position: relative;
@@ -904,14 +931,58 @@ img {
   justify-self: center;
   z-index: -1;
 }
+
+
+
+
+
+
+
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: hsl(350, 40%, 75%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: hsl(350, 40%, 65%);
+}
+
+::-webkit-slider-thumb:hover{
+  background-color: hsl(350, 40%, 55%);
+}
+
+
+
+
+
 
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--body-color);
+  box-shadow: 0 4px 16px hsla(350, 70%, 20%, .2);
+  color: var(--title-color);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  border-radius: .75rem;
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
+
+.scrollup:hover{
+  transform: translateY(-.5rem);
+}
 
 
 /* Show Scroll Up */
-
+.show-scroll{
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices <> */

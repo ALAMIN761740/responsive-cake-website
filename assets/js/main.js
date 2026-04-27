@@ -125,10 +125,45 @@ const swiperNew = new Swiper('.new__swiper', {
 
 
 
+
+
+
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+  const scrollUp =document.getElementById('scroll-up')
+  // 
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll')
+}
+
+window.addEventListener('scroll',scrollUp)
+
+
+
+
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+
+const scrollActive = () =>{
+  const scrollY = window.scrollY
+
+  sections.forEach(current =>{
+    const sectionId = current.getAttribute('id'),
+          sectionTop = current.offsetTop - 50,
+          sectionHeight = current.offsetHeight,
+          link = document.querySelector('.nav__menu a[href="#' + sectionId + '"]')
+
+    if(!link) return
+
+    link.classList.toggle(
+      'active-link',
+      scrollY > sectionTop && scrollY <= sectionTop + sectionHeight
+    )
+  })
+}
+
+window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
